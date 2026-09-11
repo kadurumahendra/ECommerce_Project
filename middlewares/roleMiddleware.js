@@ -8,7 +8,7 @@ const role = (requiredRole) =>
 
     if(req.user.role !== requiredRole)
     {
-        return res.status(404).json({message:'There is no access for users'})
+        return res.status(404).json({message:'There is no access for normal users'})
     }
     next()
 }
