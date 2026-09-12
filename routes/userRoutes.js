@@ -11,5 +11,4 @@ router.get("/:id",authentication,role("admin"), getUserById);
 router.put("/:id",authentication,role("admin"), updateUser)
 router.delete("/:id", authentication, role("admin"),deletedUser)
 
-
 export default router;
